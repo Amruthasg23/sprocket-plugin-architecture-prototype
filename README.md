@@ -26,11 +26,12 @@ This prototype currently includes three backend implementations:
 Each backend implements a common interface defined by the `ExecutionBackend` trait.
 
 ## Project Structure
-src/ ├── main.rs 
-     ├── plugin_interface.rs 
-     ├── sample_backend.rs 
-     ├── docker_backend.rs 
-     └── remote_backend.rs
+src/ 
+├── main.rs 
+├── plugin_interface.rs 
+├── sample_backend.rs 
+├── docker_backend.rs 
+└── remote_backend.rs
 
 
 ## Core Idea
