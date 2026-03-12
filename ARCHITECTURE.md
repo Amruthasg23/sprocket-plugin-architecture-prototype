@@ -40,23 +40,22 @@ Represents execution within container environments.
 Represents execution on remote servers or distributed workers.
 
 ## Execution Flow
-
 The main application loads available backends and executes jobs through a common interface.
-        +-------------------+
-        |       Main        |
-        +-------------------+
-                 |
-                 v
-      +---------------------+
-      |  ExecutionBackend   |
-      |      (Trait)        |
-      +---------------------+
-        /        |        \
-       /         |         \
-      v          v          v
-+-------------+ +-------------+ +-------------+
- | LocalBackend| |DockerBackend| |RemoteBackend| 
- +-------------+ +-------------+ +-------------+
+            +-------------------+
+            |       Main        |
+            +-------------------+
+                     |
+                     v
+          +---------------------+
+          |  ExecutionBackend   |
+          |       (Trait)       |
+          +---------------------+
+             /        |        \
+            /         |         \
+           v          v          v
+   +-------------+ +-------------+ +-------------+
+   | LocalBackend| |DockerBackend| |RemoteBackend|
+   +-------------+ +-------------+ +-------------+
 
 
 ## Advantages of This Architecture
